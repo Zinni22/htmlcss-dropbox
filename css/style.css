@@ -8,3 +8,52 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+.flex-container{
+    display: flex;
+}
+ul{
+    list-style: none;
+}
+
+/* HEADER */
+header{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    height:60px;
+    padding:0 10px;
+}
+header ul > li{
+    padding:15px 20px;
+    font-size:11px;
+    line-height:30px;
+}
+header ul > li:hover{
+    border-bottom:2px solid #0061ff;
+    cursor: pointer;
+}
+.bottone{
+    background-color: #0061ff;
+    color:white;
+    height:30px;
+    margin-top:15px;
+    line-height: 0;
+}
+.bottone:hover, header ul:nth-child(1) li:nth-child(1){
+    border: none;
+}
+
+
+/* MAIN */
+main{
+    margin-top:60px;
+    height:2000px;
+    background-color: #b4d0e7;
+}
+
+
+/* FOOTER */
