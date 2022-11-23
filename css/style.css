@@ -7,6 +7,7 @@
 /* GENERALI */
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: white;
 }
 .flex-container{
     display: flex;
@@ -25,6 +26,8 @@ ul{
 .bottone{
     background-color: #0061ff;
     color:white;
+    text-align: center;
+    padding:10px;
 }
 .bottone:hover{
     cursor: pointer;
@@ -59,6 +62,7 @@ header ul > .bottone{
     margin-top:15px;
     line-height: 0;
     height:30px;
+    padding:15px 20px;
 }
 .bottone:hover, header ul:nth-child(1) li:nth-child(1){
     border: none;
@@ -70,7 +74,6 @@ header ul > .bottone{
 /* Jumbo */
 main{
     margin-top:60px;
-    background-color: white;
 }
 .jumbo{
     padding-top:60px;
@@ -93,8 +96,7 @@ h1{
 }
 #testo-jumbo > .bottone{
     margin:40px 0 40px;
-    padding:15px;
-    width:215px;
+    width:220px;
 
 }
 .jumbo i {
@@ -149,16 +151,16 @@ h3{
     margin-bottom: 20px;
     margin-top: 30px;
 }
-.partner .bottone-bianco{
+.partner .bianco{
     border:2px solid black;
-    padding:10px;
+    background-color: white;
+    color: black;
     font-size: 12px;
-    width: 115px;
     margin-top:50px ;
 }
-.partner .bottone-bianco:hover{
+.partner .bianco:hover, .aziende-due .bottone:hover{
     cursor: pointer;
-    background-color: rgb(229, 229, 229);
+    background-color: rgb(222, 218, 218);
 }
 
 /* Operazioni */
@@ -201,7 +203,7 @@ h3{
 }
 .container-aziende > div > img{
     width:60%;
-    fill:white;
+    filter: invert(1);
 }
 .container-aziende:nth-child(1) > div:nth-child(1){
     background-color: #a2d39b;
@@ -236,7 +238,78 @@ h3{
 }
 
 
+/* Azienda numero due */
+.aziende-due{
+    background-color: #b4d0e7;
+    padding:100px 0;
+}
+.aziende-due div{
+    justify-content: space-between;
+    align-items: center;
+}
+.aziende-due h2{
+    margin-bottom:0;
+    color: #7d3b3b;
+    line-height: 35px;
+}
+.aziende-due  .bottone{
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    padding:15px 25px;
+}
+
+
+/* Domande */
+.domande-frequenti{
+    padding:100px 0;
+}
+.domanda{
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px 30px 0;
+    border-top: 1px solid black;
+}
+.domanda span{
+    font-weight: 700;
+}
+.domanda:nth-last-of-type(1){
+    border-bottom: 1px solid black;
+}
+
+
 
 
 
 /* FOOTER */
+footer{
+    background-color: black;
+    color: white;
+    padding:60px 0;
+}
+footer div{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-list{
+    width:calc(100%/5 - 5px);
+    height:200px;
+}
+.footer-list li{
+    margin-bottom:15px;
+    font-weight: 300;
+    font-size: 12px;
+}
+.footer-list li:nth-child(1){
+    font-weight: 700;
+}
+
+.lingua{
+    border-top:2px solid gray;
+    font-size: 12px;
+    color:lightgray;
+    margin-top: 50px;
+    padding-top: 30px;
+    width: 120px;
+}
