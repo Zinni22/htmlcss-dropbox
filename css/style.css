@@ -33,7 +33,12 @@ ul{
     cursor: pointer;
     background-color: #5f98f2;
 }
-
+.linea-grigia{
+    height: 1px;
+    width:80px;
+    background-color: gray;
+    margin-top:30px;
+}
 
 
 /* HEADER */
@@ -112,32 +117,81 @@ h1{
 h2{
     margin-bottom:50px;
 }
-.business span{
+.business > .dot{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+
+}
+.business > .blue{
+    border: 5px solid #0061ff;
+}
+.business > span{
     margin-right:20px;
 }
-.business > div{
+.card-container{
     width:100%;
     height:1050px;
     justify-content: space-between;
     margin-top: 50px;
     flex-wrap: wrap;
 }
-.business > div > .card{
+.card{
     width: calc(100%/3 - 15px);
-    height:700px;
     border:1px solid gray;
 }
-.business > div > .card:nth-last-of-type(1){
+
+
+
+.card > .top-card{
+    text-align: center;
+    padding:10px 0;
+    border-bottom: 1px solid gray;
+}
+.card > .bottom-card{
+    padding: 0 40px 30px 30px;
+    font-size:13px;
+}
+.card > .bottom-card > p{
+    margin-top:20px;
+}
+.card > .bottom-card > p:nth-child(3){
+    color:grey;
+    margin-bottom:40px;
+}
+.card > .bottom-card ul li{
+    margin-top:20px;
+    text-indent: -7px;
+}
+.card > .bottom-card .bottone{
+    margin:30px 0;
+}
+.card > .bottom-card > ul .blue-check{
+    color:#0061ff;
+}
+
+.last{
     width:100%;
     height:300px;
     margin-top:15px;
 }
+.last > .bottom-card{
+    justify-content: space-between;
+}
+.last > .bottom-card p:nth-child(3){
+    margin-top:80px;
+}
+
+
+
 
 
 /* Partner */
 .partner{
     justify-content: space-between;
-    margin-top:50px;
+    margin-top:170px;
 }
 .partner img{
     width: 55%;
@@ -201,6 +255,25 @@ h3{
     justify-content: center;
     align-items: center;
 }
+
+.container-aziende:nth-child(2){
+    padding:50px;
+    font-size:13px;
+    overflow: auto;
+}
+.container-aziende:nth-child(2) img{
+    width:50%;
+}
+.container-aziende:nth-child(2) .linea-grigia{
+    height:2px;
+    width:80px;
+}
+
+.container-aziende:nth-child(2) p{
+    margin-top:60px;
+}
+
+
 .container-aziende > div > img{
     width:60%;
     filter: invert(1);
@@ -300,6 +373,9 @@ footer div{
     margin-bottom:15px;
     font-weight: 300;
     font-size: 12px;
+}
+.footer-list li:hover{
+    cursor:pointer;
 }
 .footer-list li:nth-child(1){
     font-weight: 700;
