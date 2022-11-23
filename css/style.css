@@ -39,6 +39,9 @@ ul{
     background-color: gray;
     margin-top:30px;
 }
+.relative{
+    position: relative;
+}
 
 
 /* HEADER */
@@ -83,7 +86,6 @@ main{
 .jumbo{
     padding-top:60px;
     background-color: #b4d0e7;
-    position: relative;
 }
 h1{
     font-weight: 700;
@@ -91,10 +93,10 @@ h1{
     margin-bottom:70px;
 }
 .jumbo img{
-    width:50%;
+    width:700px;
     position: absolute;
-    top:280px;
-    left: 650px;
+    top:0;
+    left:40%;
 }
 #testo-jumbo{
     width:40%;
