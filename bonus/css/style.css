@@ -58,9 +58,11 @@ header{
     padding:0 10px;
 }
 header ul > li{
-    padding:15px 20px;
+    padding:15px 0 15px 0;
     font-size:11px;
     line-height:30px;
+    text-align: center;
+    margin-left: 30px;
 }
 header ul > li:hover{
     border-bottom:2px solid #0061ff;
@@ -75,6 +77,28 @@ header ul > .bottone{
 .bottone:hover, header ul:nth-child(1) li:nth-child(1){
     border: none;
 }
+.funzioni{
+    background-color: #e8e1d7;
+    margin-top: 15px;
+    display: none;
+}
+.funzioni li{
+    padding:10px;
+    margin: 0;
+}
+.funzioni li:hover{
+    border: none;
+    background-color: #0061ff;
+    color: white;
+}
+#funzioni:hover .funzioni{
+    display: block;
+}
+
+
+
+
+
 
 
 /* MAIN */
@@ -344,8 +368,6 @@ h3{
     padding:100px 0;
 }
 .domanda{
-    justify-content: space-between;
-    align-items: center;
     padding: 30px 40px 30px 0;
     border-top: 1px solid black;
 }
@@ -355,6 +377,23 @@ h3{
 .domanda:nth-last-of-type(1){
     border-bottom: 1px solid black;
 }
+.domanda span > i{
+    margin-left:190px;
+}
+.domanda p{
+    margin-top:30px;
+    display:none;
+}
+.domanda:hover{
+    cursor: pointer;
+}
+.domanda:hover p{
+    display: block;
+}
+.domanda:hover span > i{
+    transform: rotate(180deg);
+}
+
 
 
 
